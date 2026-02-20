@@ -33,6 +33,16 @@ body {
     flex-direction: column;
 }
 
+.teste1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    height: 50%;
+    border: 1px  solid black;
+}
+
 img{
     width: 400px;
     height: 400px;
