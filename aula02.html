@@ -21,6 +21,49 @@
            margin: 0;
            padding: 0;
        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+
+        }
+
+        /* Estilo do Botão Hamburguer( escondido no desktop) */
+        .hamburguer{
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Responsividade */
+        @media and (max-width: 768px) {
+            .hamburguer{
+                /* mostra o botão hamburguer */
+                display: block;
+            }
+
+            /* Esconde a lista e muda o layout para vertical */
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px; /* altura da navbar */
+                left: 0;
+                width: 100%;
+                background-color: #333;
+                text-align: center;
+                padding: 20px 0;
+            }
+
+            /* Classe que será adicionada ao javascript para mostrar o menu */
+            .nav-link.active {
+                display: flex;
+            }
+            
+        }
     </style>
 
 </head>
@@ -55,6 +98,15 @@
         <h1>Conteúdo da página</h1>
         <p>Redimensione a janela do navegador para ver o menu mudar.</p>
     </div>
+    
+    <a href="" style="text-decoration: none; color: red;">ffcev</a>
+    <script>
+        alert("Anjos sem paciência")
+    </script>
+
+    <script>
+
+    </script>
     
 </body>
 </html>
