@@ -100,12 +100,18 @@
     </div>
     
     <a href="" style="text-decoration: none; color: red;">ffcev</a>
-    <script>
         alert("Anjos sem paciência")
-    </script>
-
     <script>
+       // SELECIONA OS ELEMENTOS DE HTML
+       const hamburguerBtn = document.getElementById('hamburguer-btn')
+       cont navLinks = document.getElementById('nav-links')
 
+       // ADICIONA UM EVENTO AO BOTÃO DE CLICK
+
+       hamburguerBtn.addevEventListener('click', () => {
+        navLinks.classList.toggle('active');
+       })
+       
     </script>
     
 </body>
