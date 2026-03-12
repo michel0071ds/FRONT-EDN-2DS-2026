@@ -2,14 +2,14 @@ body {
     overflow: hidden;
     width: 100%;
     height: 100vh;
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .caixa{
-    background-color: aqua;
+    background-color: rgb(8, 0, 255);
     width: 80%;
     height: 80%;
     border:1px solid yellow;
