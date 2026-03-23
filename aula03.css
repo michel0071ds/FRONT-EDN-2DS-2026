@@ -49,3 +49,46 @@
 .slide:nth-child(3) {
     background: linear-gradient(45deg, #f200ff, #fbac00);
 }
+
+@keyframes slide {
+    0%, 30% {
+        transform: transladeX(0);
+    }
+    66%, 96% {
+        transform: transladeX(0);
+    }
+    100% {
+        transform: transladeX(0);
+    }
+}
+
+.carousel-indicators{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translatex(-50%);
+    display: flex;
+    gab: 10px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.indicator:nth-childs(1) {
+    anomation-delay: 0s
+}
+    
+
+.indicator:nth-childs(1) {
+    anomation-delay: 5s
+}
+    
+
+.indicator:nth-childs(1) {
+    anomation-delay: 10s
+}
+    
