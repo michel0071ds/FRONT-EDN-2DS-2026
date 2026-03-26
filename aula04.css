@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: boder-box;
+    font-family: 'poppins', 'sans-serif';
+}
+
+/* FUNDO DA PAGÍNA COM GRADIENT */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100hz;
+    background: linear-gradient(135deg, #667eea, 0%, #764ba2 100%);
+}
+/*card principal */
+.font-contaner {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px ;
+    text-align: center;
+    transition: 0.3s ease;
+
+}
