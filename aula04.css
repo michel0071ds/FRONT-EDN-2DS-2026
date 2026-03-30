@@ -1,12 +1,12 @@
-*{
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', 'sans-serif';
-
-
+    font-family: 'Poppins', 'sans-serif';
 }
-/* FUNDO DA PAGÍNA COM GRADIENT */
+
+/* FUNDO DA PÁGINA COM GRADIENT */
+
 body{
     display: flex;
     justify-content: center;
@@ -14,25 +14,26 @@ body{
     min-height: 100vh;
     background: linear-gradient(135deg, #667eea, 0%, #764ba2 100%);
 }
-/*card principal */
-.font-contaner {
+
+/* CARD PRINCIPAL */
+.form-container {
     background: rgba(255, 255, 255, 0.95);
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 400px ;
+    max-width: 400px;
     text-align: center;
     transition: transform 0.3s ease;
 }
 
 .form-container:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px)
 }
 
-.font-contaner h2 {
+.form-container h2 {
     color: #333;
-     margin-bottom: 10px;
+    margin-bottom: 10px;
     font-weight: 600;
 }
 
@@ -42,13 +43,13 @@ body{
     margin-bottom: 30px;
 }
 
-.input-grup {
+.input-group {
     position: relative;
     margin-bottom: 20px;
     text-align: left;
 }
 
-.input-grup label {
+.input-group label {
     display: block;
     margin-bottom: 5px;
     color: #555;
@@ -56,7 +57,7 @@ body{
     font-weight: 500;
 }
 
-.input-grup input {
+.input-group input {
     width: 100%;
     padding: 12px 15px;
     border: 2px solid #e1e1e1;
@@ -65,4 +66,49 @@ body{
     font-size: 14px;
     transition: all 0.3s ease;
     background-color: #f9f9f9;
+}
+
+.input-group input:focus {
+    border-color: #764ba2;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(118, 75, 162, 0.1);
+}
+
+button {
+    width: 100%;
+    padding:  12px;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(118, 75, 162, 0.4);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(118, 75, 162, 0.6);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.footer-link {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #666;
+}
+
+.font-link a {
+    color: #764ba2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-link a:hover {
+    text-decoration: underline;
 }
