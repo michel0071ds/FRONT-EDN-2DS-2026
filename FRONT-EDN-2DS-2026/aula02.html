@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula02 - menu hambuerguer</title>
+
+    <style>
+       .navbar{
+           background-color: black;
+       }
+       .logo {
+           color: white;
+       }
+       
+       /* Estilo de lista de Links */
+       .nav-links{
+           list-style: none;
+           display: flex; /* Exibe horizontalmente o menu */
+           gap: 20px;
+           margin: 0;
+           padding: 0;
+       }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+
+        }
+
+        /* Estilo do Botão Hamburguer( escondido no desktop) */
+        .hamburguer{
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Responsividade */
+        @media and (max-width: 768px) {
+            .hamburguer{
+                /* mostra o botão hamburguer */
+                display: block;
+            }
+
+            /* Esconde a lista e muda o layout para vertical */
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px; /* altura da navbar */
+                left: 0;
+                width: 100%;
+                background-color: #333;
+                text-align: center;
+                padding: 20px 0;
+            }
+
+            /* Classe que será adicionada ao javascript para mostrar o menu */
+            .nav-link.active {
+                display: flex;
+            }
+            
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Meu site</div>
+
+        <!-- Botão Hamburguer para responsividade -->
+        <button class="hamburguer" id="hambuerguer-btn">
+            &#9776; <!-- Símbolo do ícone de menu -->
+        </button>
+
+        <!-- Lista de intes do menu -->
+         <ul class="nav-links" id="nav-links">
+            <li>
+                <a href="https://www.amazon.com.br">Início</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com.br">Sobre</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com.br">Serviços</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com.br">Contato</a>
+            </li>
+         </ul>
+    </nav>
+
+    <div style="padding: 20px">
+        <h1>Conteúdo da página</h1>
+        <p>Redimensione a janela do navegador para ver o menu mudar.</p>
+    </div>
+    
+    <a href="" style="text-decoration: none; color: red;">ffcev</a>
+        alert("Anjos sem paciência")
+    <script>
+       // SELECIONA OS ELEMENTOS DE HTML
+       const hamburguerBtn = document.getElementById('hamburguer-btn')
+       cont navLinks = document.getElementById('nav-links')
+
+       // ADICIONA UM EVENTO AO BOTÃO DE CLICK
+
+       hamburguerBtn.addevEventListener('click', () => {
+        navLinks.classList.toggle('active');
+       })
+       
+    </script>
+    
+</body>
+</html>
